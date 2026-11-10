@@ -1,0 +1,100 @@
+@media screen and (max-width: 1440px) {
+    .main {
+        padding: 15px 20px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .reports-row {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .bottom {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .sidebar {
+        width: 70px;
+        padding: 24px 6px 0;
+    }
+
+    .sidebar .logo p,
+    .sidebar .section,
+    .sidebar .item span,
+    .sidebar .count,
+    .sidebar .who,
+    .sidebar .team {
+        display: none;
+    }
+
+    .sidebar .item {
+        justify-content: center;
+        padding: 0;
+    }
+
+    .sidebar .item svg {
+        margin-right: 0;
+    }
+
+    .sidebar .profile {
+        justify-content: center;
+        padding: 0;
+    }
+
+    .top {
+        flex-direction: column;
+        height: auto;
+        gap: 12px;
+        align-items: flex-start;
+    }
+
+    .tools {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .search {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .reports-row {
+        grid-template-columns: 1fr;
+    }
+
+    .tabs {
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    .tab {
+        flex-shrink: 0;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .main {
+        padding: 10px;
+    }
+
+    .tools {
+        gap: 8px;
+    }
+
+    .stock-btn,
+    .add {
+        width: 100%;
+        justify-content: center;
+    }
+}
